@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h3>New person creation</h3>
+<div>
+    <label>
+        First Name
+        <input type="text" id = "firstName"/>
+    </label>
+    <label>
+        Second Name
+        <input type="text" id = "secondName"/>
+    </label>
+    <label>
+        Age
+        <input type="text" id = "age"/>
+    </label>
+    <label>
+        Occupation
+        <select id = "occupation">
+            <option selected value = "CARPENTER">Carpenter</option>
+            <option selected value = "WITCH">Witch</option>
+        </select>
+    </label>
+    <label>
+        Gender
+        <select id = "gender">
+            <option selected value = "MALE">Male</option>
+            <option selected value = "FEMALE">Female</option>
+            <option selected value = "OTHER">Other</option>
+        </select>
+    </label>
+    <div>
+        <button id="putIt">
+            SAVE!
+        </button>
+        <a id="backButton" href="/">
+            CANCEL!
+        </a>
+    </div>
+</div>
+</body>
+<script src="/script/newPerson.js"></script>
+<script th:inline="javascript">
+/*<![CDATA[*/
+
+    var person = /*[[${id}]]*/ null;
+    fillFields(person);
+
+/*]]>*/
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="data">
+    <h2 id="name"></h2>
+    <h3 id="occupation"></h3>
+    <h3 id="age"></h3>
+</div>
+<div id="buttons">
+    <a value="Edit" href= "" id="editButton">Edit
+    </a>
+    <button value="Delete" id="deleteButton">Delete
+    </button>
+    <a value="Back" href="/" id="backButton">To list
+    </a>
+</div>
+
+</body>
+<script src="/script/person.js"></script>
+<script th:inline="javascript">
+/*<![CDATA[*/
+
+    var person = /*[[${id}]]*/ null;
+    document.person = person;
+    personShow(person);
+    document.getElementById("deleteButton").addEventListener("click", personDelete);
+
+/*]]>*/
+</script>
+</html>

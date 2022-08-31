@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h3>New person creation</h3>
+<div>
+  <label>
+    First Name
+    <input type="text" id = "firstName"/>
+  </label>
+  <label>
+    Second Name
+    <input type="text" id = "secondName"/>
+  </label>
+  <label>
+    Age
+    <input type="text" id = "age"/>
+  </label>
+  <label>
+    Occupation
+    <select id = "occupation">
+      <option selected value = "CARPENTER">Carpenter</option>
+      <option selected value = "WITCH">Witch</option>
+      <option selected value = "SHERIFF">Sheriff</option>
+      <option selected value = "DOCTOR">Doctor</option>
+      <option selected value = "SHOEMAKER">Shoemaker</option>
+      <option selected value = "WEAVER">Weaver</option>
+      <option selected value = "SHEPPARD">Sheppard</option>
+      <option selected value = "OTHER">Other</option>
+    </select>
+  </label>
+  <label>
+    Gender
+    <select id = "gender">
+      <option selected value = "MALE">Male</option>
+      <option selected value = "FEMALE">Female</option>
+      <option selected value = "OTHER">Other</option>
+    </select>
+  </label>
+  <div>
+    <button id="doIt">
+      SAVE!
+    </button>
+    <a id="backButton" href="/">
+      CANCEL!
+    </a>
+  </div>
+</div>
+</body>
+<script src="/script/newPerson.js"></script>
+</html>
